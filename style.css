@@ -2,8 +2,8 @@ h1 {
   text-align: center;
   margin: 20px 0;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid black;
+  background: black;
+  border: 2px solid #ccc;
 }
 body {
   display: flex;
@@ -19,14 +19,42 @@ body {
 div {
   margin-bottom: 20px;
 }
-button {
+
+body {
+  background-image: url(./assetz/fundologin.png);
+  background-size: cover no-repeat;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.Title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  background-color: black;
+  color: #fff;
+}
+
+.Button {
+  background-color: #f0f0f0;
+  border: 2px solid #807e7e;
   padding: 10px 20px;
-  font-size: 20px;
-  background: #f0f0f0;
-  border: 2px solid #ccc;
+  font-size: 50px;
   cursor: pointer;
 }
 
-body {
-  background-color: yellowgreen;
+.Button:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
 }
