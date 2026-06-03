@@ -85,3 +85,18 @@ input {
 img {
   width: 200px;
 }
+
+.senha-area {
+  position: relative;
+}
+
+#mostrar-senha {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translate(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 10px;
+}
