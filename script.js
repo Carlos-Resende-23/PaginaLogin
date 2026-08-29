@@ -1,10 +1,9 @@
 const inputSenha = document.getElementById("password")
 const mostrarSenha = document.getElementById("mostrar-senha")
 
-mostrarSenha.addEventListener("click", () => {
-  if (inputSenha.type === "password") {
-    inputSenha.type = "text"
-  } else {
-    inputSenha.type = "password"
-  }
-})
+if (inputSenha && mostrarSenha) {
+  mostrarSenha.addEventListener("click", () => {
+    const tipoAtual = inputSenha.type
+    inputSenha.type = tipoAtual === "password" ? "text" : "password"
+  })
+}
